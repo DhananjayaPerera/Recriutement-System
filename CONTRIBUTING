@@ -1,0 +1,20 @@
+# Contribution Guidelines
+###### The following is a set of guidelines for contributing to this project. These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+
+
+## Contributers
+###### M.M Afrar - mmafrar@gmail.com
+###### D.T.A.Y.M. Dissanayake - yohanimalsha94@gmail.com
+###### A.H.C Lakmal - ahclakmal94@gmail.com
+###### M.I.M.Nawab - nawab94@gmail.com
+###### G.S.D. Perera - sajithdperera@gmail.com
+###### G.S.I.M Perera - sunethperera599@gmail.com
+###### T.T.D Senevirathne - thirajthusharu@gmail.com
+
+
+## Styleguides - Git Commit Messages
+###### Use the present tense ("Add feature" not "Added feature")
+###### Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+###### Limit the first line to 72 characters or less
+###### Reference issues and pull requests liberally
+###### When only changing documentation, include [ci skip] in the commit description
