@@ -1,0 +1,256 @@
+div.content {
+	/*border: #ccc solid 3px;
+	border: 1px solid #ccc;*/
+	-moz-box-shadow: 0 0 3px #aaa;
+	-webkit-box-shadow: 0 0 3px #aaa;
+	box-shadow: 0 0 3px #aaa;
+	-webkit-border-radius: 0 3px 3px 3px;
+	-moz-border-radius: 0 3px 3px 3px;
+	border-radius: 0 3px 3px 3px;
+	clear: left;
+	/*padding: 1em;*/
+	/*background-image:url(../images/bg_block_parkings_ecom.gif);*/
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	/*opacity: 0.6;
+    filter: alpha(opacity=60);  For IE8 and earlier */
+	width: 350px;
+	height: 325px;
+	padding-top: 10px;
+}
+div.content:hover {
+	opacity: 1;
+	transition: opacity .2s ease-out;
+	-moz-transition: opacity .2s ease-out;
+	-webkit-transition: opacity .2s ease-out;
+	-o-transition: opacity .2s ease-out;
+	}
+div.content.inactive {
+	display: none;
+}
+
+ol#toc {
+    height: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	font-size:12px;
+}
+
+ol#toc a {
+	color: #CCCCCC;
+	display: block;
+	float: left;
+	height: 25px;
+	padding-left: 10px;
+	text-decoration: none;
+	background-image: url(../site_img/tabs.png);
+}
+
+ol#toc a:hover {
+    background-position: 0 -120px;
+}
+
+ol#toc a:hover span {
+    background-position: 100% -120px;
+}
+
+ol#toc li {
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+ol#toc li a.active { 
+    background-position: 0 -60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+ol#toc li a.active span {
+    background-position: 100% -60px;
+}
+
+ol#toc span {
+    background: url(../site_img/tabs.png) 100% 0;
+    display: block;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+/*start news tab*/
+div.news_content {
+	/*border: #ccc solid 3px;
+	border: 1px solid #ccc;*/
+	-moz-box-shadow: 0 0 3px #aaa;
+	-webkit-box-shadow: 0 0 3px #aaa;
+	box-shadow: 0 0 3px #aaa;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	clear: left;
+	/*padding: 1em;*/
+	/*background-image:url(../images/bg_block_parkings_ecom.gif);*/
+	background-repeat: no-repeat;
+	background-color:#FFFFFF;
+	width:295px;
+	height:212px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+}
+
+div.news_content.inactive {
+	display: none;
+}
+div.news_content1 {
+	/*border: #ccc solid 3px;
+	border: 1px solid #ccc;*/
+	-moz-box-shadow: 0 0 3px #aaa;
+	-webkit-box-shadow: 0 0 3px #aaa;
+	box-shadow: 0 0 3px #aaa;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	clear: left;
+	/*padding: 1em;*/
+	background-image:url(../site_img/useful_contact.png);
+	background-color:#FFFFFF;
+	width:295px;
+	height:212px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+div.news_content1.inactive {
+	display: none;
+}
+
+ol#toc1 {
+    height: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	font-size:12px;
+}
+
+ol#toc1 a {
+    background: url(../site_img/tabs.png);
+    color: #CCCCCC;
+    display: block;
+    float: left;
+    height: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+ol#toc1 a:hover {
+    background-position: 0 -120px;
+}
+
+ol#toc1 a:hover span {
+    background-position: 100% -120px;
+}
+
+ol#toc1 li {
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+ol#toc1 li a.active { 
+    background-position: 0 -60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+ol#toc1 li a.active span {
+    background-position: 100% -60px;
+}
+
+ol#toc1 span {
+    background: url(../site_img/tabs.png) 100% 0;
+    display: block;
+    line-height: 25px;
+    padding-right: 10px;
+}
+
+/*end news tab*/
+
+/* test */
+#grilleVols {
+    position: relative;
+    margin-left: 9px;
+    width: 294px;
+    height: 303px;
+    float: left;
+}
+
+#grilleVols ul {
+    margin: 0 0 0 5px;
+    height: 25px;
+    padding: 0;
+}
+
+#grilleVols ul li {
+    background: url('../site_img/bg_grillevols_bluelight.png') no-repeat right bottom;
+    position: relative;
+    margin-left: -5px;
+    font-size: 10px;
+    display: block;
+    height: 25px;
+    float: left;
+    z-index: 1;
+}
+
+#grilleVols ul li a {
+    /*background: url('../images/skin/corner_reverse_white_small_tl.png') no-repeat 0 0;*/
+    text-transform: uppercase;
+    padding: 0 40px 0 30px;
+    text-decoration: none;
+    line-height: 26px;
+    font-weight: bold;
+    display: block;
+    color: #0CA7D3;
+    height: 26px;
+    float: left;
+    font-size: 10px;
+}
+
+#grilleVols .blueBtn a:hover {
+    text-decoration: underline;
+}
+
+#grilleVols ul li.ui-tabs-selected,
+#grilleVols ul li.ui-state-active,
+#grilleVols ul li.ui-state-hover {
+    background: url('../site_img/bg_grillevols_bluedark.png') no-repeat right bottom;
+}
+
+#grilleVols ul li.ui-tabs-selected,
+#grilleVols ul li.ui-state-active {
+    z-index: 2;
+}
+
+#grilleVols ul li.ui-tabs-selected a,
+#grilleVols ul li.ui-state-active a,
+#grilleVols ul li.ui-state-hover a {
+    color: #FFFFFF;
+}
+
+#grilleVols .buttons {
+    position: absolute;
+    bottom: 14px;
+}
+
+#grilleVols .buttons .btn.first {
+    margin-right: 12px;
+}
+
+#grilleVols .buttons .btn {
+    width: 138px;
+    margin: 0;
+}

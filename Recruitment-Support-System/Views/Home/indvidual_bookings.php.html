@@ -1,0 +1,1394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://www.airport.lk/lounges/indvidual_bookings.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js cssanimations csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="http://www.airport.lk/site_img/favicon.ico">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/base.css">
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/siteaccess.css">
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/stylewidgetnew.css">
+<link rel="stylesheet" type="text/css" media="screen" href="./indvidual_bookings.php_files/menu.css">
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/tabs.css">
+<script id="facebook-jssdk" src="./indvidual_bookings.php_files/sdk.js.download"></script><script async="" src="./indvidual_bookings.php_files/analytics.js.download"></script><script type="text/javascript" src="./indvidual_bookings.php_files/curvycorners.js.download"></script>
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/aasl.css">
+<!--Colored tab start-->
+<script type="text/javascript" src="./indvidual_bookings.php_files/jquery.js.download"></script>
+<script type="text/javascript" src="./indvidual_bookings.php_files/widget.js.download"></script>
+<script type="text/javascript">
+$(document).ready(function () {    
+    $('#menu li').hover(
+        function () {
+            $('ul', this).stop(true, true).slideDown(400);
+        },
+        function () {
+            $('ul', this).stop(true, true).slideUp(400);            
+        });
+});
+</script>
+<!--Main img Gallery-->
+<script type="text/javascript" src="./indvidual_bookings.php_files/jquery-1.2.6.min.js.download"></script>
+<script type="text/javascript">
+
+
+
+
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow DIV.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+    // use this to pull the divs in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow DIV:first');
+
+    // uncomment below to pull the divs randomly
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 4000 );
+});
+
+</script>
+<!-- google analytic tool -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37828960-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--Slider-->
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/style2.css">
+<script type="text/javascript" src="./indvidual_bookings.php_files/modernizr.custom.28468.js.download"></script>
+<noscript>
+&lt;link rel="stylesheet" type="text/css" href="../slider/css/nojs.css" /&gt;
+</noscript>
+<script type="text/javascript">var curvyCornersVerbose = false;</script> 
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script src="js/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/jquery183.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+		  // Slideshow 
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+
+
+
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body id="home">
+	<div>
+<!--<div class="imgBg" style="background:url(images/bg-theme-blue.png) fixed no-repeat 0 0;">-->
+	<div style="background-color:#FFFFFF;">
+		<div class="bgMenu"></div>
+ 
+<div class="container">
+    
+			<div class="h0">
+				<a href="http://www.airport.lk/index.php" title="Bandaranike International Airport">
+                    <img src="./indvidual_bookings.php_files/logo_bia.png" alt="Bandaranike International Airport">
+				</a>			
+            </div>
+            
+            <div class="logo_mria">
+				<a href="http://www.airport.lk/mria/index.php" title="Mattala Rajapaksa International Airport">
+                    <img src="./indvidual_bookings.php_files/logo_mria.png" alt="Mattala Rajapaksa International Airport">
+				</a>			
+            </div>
+            
+            <div class="logo_rma">
+				<a href="http://www.airport.lk/rma/index.php" title="Ratmalana International Airport">
+                    <img src="./indvidual_bookings.php_files/logo_rma.png" alt="Ratmalana International Airport">
+				</a>			
+            </div>
+        
+<div class="banniere">
+                                                
+				<!--<a href="subscribe.html" target="blank">
+				<img src="images/hia_progress.jpg" width="448" height="60" style="border: 0px;" alt="Airport &amp; Aviation Services (Srilanka) Ltd." title="Airport &amp; Aviation Services (Srilanka) Ltd." />				</a>-->			</div> 
+        
+<div id="header">
+        <div class="tabber">
+            
+            <a class="bia-bt bia" href="http://www.airport.lk/index.php"></a>
+            <a class="aasl-bt" href="http://www.airport.lk/aasl/index.php"></a>
+            <!--<a class="hia-bt" href="../mria/index.php"></a>
+            <a class="rma-bt" href="../rma/index.php"></a>-->
+           <br style="clear: left">      </div>
+           
+           <!--<div class="weather">
+           
+           </div>-->
+
+<!--<div id="topMenu">
+            <a href="../aasl/enrollment/careers.php">Carrers</a>
+            <a href="../aasl/business_info/tenders.php">Tenders</a>
+            <a href="javascript:void(0)" class="underline"
+onClick="window.open('../CATC/index.html','welcome','width=800,height=600,menubar=yes,status=yes,scrollbars=yes')">Training</a>
+            <a href="../aasl/contact_us/contact_details.php" class="last">Contact Us</a>         </div>--><!-- Close topmenu -->
+         
+         
+         <div id="localtime">
+       Fri Mar 31, 2017 21:56<br>&nbsp;(GMT+0530) Colombo, Sri Lanka         </div>  
+            
+           <div class="search">
+			<form method="get" action="http://www.google.com/search" target="_blank">
+                <input id="searchPhrase" name="q" title="Enter your text here" size="26" maxlength="255" type="text" value="search..." onfocus="if(this.value==&#39;search...&#39;) { this.value=&#39;&#39; }" onblur="if(this.value==&#39;&#39;) { this.value=&#39;search...&#39; }">
+            <input src="./indvidual_bookings.php_files/btn_search.png" id="go" alt="Search" type="image"> 
+                <input type="hidden" name="sitesearch" value="www.airport.lk" checked="checked"></form>
+			</div>
+<!--Close Search-->
+		
+            <div class="span-9 last smallNav">
+				<div class="span-7">				</div>
+			</div>
+	</div>
+<!-- End header -->
+    
+<!--start Mega menu-->
+    <div class="wrapper_menu menu_light_theme"><!-- BEGIN MENU WRAPPER -->
+<ul id="menu">
+    
+    <li><a href="http://www.airport.lk/flight_info/flight_info.php" class="drop title"><span><strong>Flight Info</strong></span>
+    	
+        </a><!-- Begin flight info -->
+    
+        <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+            <div class="col_1">
+                <a href="http://www.airport.lk/flight_info/flight_status.php"><h3>Flight Status</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/flight_info/arrival.php">Arrival</a></li>
+                    <li><a href="http://www.airport.lk/flight_info/departure.php">Departure</a></li>
+              </ul>
+            </div>
+            <div class="col_1">
+                <a href="http://www.airport.lk/flight_info/flight_schedule.php"><h3>Flight Schedule</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/flight_info/arrival_flight_schedule.php">Arrival</a></li>
+                    <li><a href="http://www.airport.lk/flight_info/departure_flight_schedule.php">Departure</a></li>
+              </ul>   
+            </div>
+            
+             <div class="col_1">
+                <a href="http://www.airport.lk/flight_info/list_of_airlines.php"><h3>Airlines</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/flight_info/list_of_airlines.php">List of Airlines</a></li>
+                </ul>   
+            </div>
+            <div class="col_1">
+            	
+            	<div class="black_box"><p><strong>Live View</strong></p>
+              <img src="./indvidual_bookings.php_files/live_flight.png" class="img_left imgshadow" alt=""><div style="font-size:10px;">Live Flight Tracker</div><br><br><br><br><br><div><a href="http://www.airport.lk/flight_info/live_view.php">more » </a></div></div>
+          </div>
+        </div><!-- End 4 columns container -->
+    </li>
+    <!-- End flight info -->
+
+    <li><a href="http://www.airport.lk/passenger_guide/passenger_guide.php" class="drop title"><span><strong>Passenger Guide</strong></span></a><!-- Begin passenger guide -->
+    
+        <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+        
+           <div class="col_1">
+                <a href="http://www.airport.lk/passenger_guide/arrival_procedures.php"><h3>Arrival Procedures</h3></a>
+                <ul style="display: none;">
+                    <li><a href="http://www.airport.lk/passenger_guide/arrival_procedures/immigration.php">Immigration</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/arrival_procedures/customs.php">Customs</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/arrival_procedures/baggage.php">Baggage</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/arrival_procedures/arrival_services.php">Arrival Services</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/passenger_guide/departure_procedures.php"><h3>Departure Procedures</h3></a>
+                <ul style="display: none;">
+                    <li><a href="http://www.airport.lk/passenger_guide/departure_procedures/emmigration.php">Emmigration</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/departure_procedures/customs.php">Customs</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/departure_procedures/baggage.php">Baggage</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/departure_procedures/lounges.php">Lounges</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/departure_procedures/departure_services.php">Departure Services</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/passenger_guide/getting_arround.php"><h3>Getting Arround</h3></a>
+                <ul style="display: none;">
+                    <li><a href="http://www.airport.lk/passenger_guide/getting_arround/to_&amp;_from_airport.php">To &amp; From Airport</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/getting_arround/parking.php">Parking</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/getting_arround/lobby_rates.php">Lobby Rates</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/getting_arround/airport_map.php">Airport Map</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/passenger_guide/transit.php"><h3>Transit </h3></a>
+                <ul style="display: none;">
+                    
+                    <li><a href="http://www.airport.lk/passenger_guide/transit/airline_lounges.php">Airline Lounges</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/transit/transit_hotel.php">Transit Hotel</a></li>
+                    <li><a href="http://www.airport.lk/passenger_guide/transit/faq.php">FAQ</a></li>
+                   
+              </ul>
+            </div>
+        </div><!-- End 4 columns container -->
+    </li>
+    <!-- End passenger guide -->
+
+	<li><a href="http://www.airport.lk/shop_dine_&amp;_relax/shop_dine_&amp;_relax.php" class="drop title"><span><strong>Shop Dine &amp; Relax</strong></span></a><!-- Begin Shop Dine & Relax -->
+    
+        <div class="dropdown_3columns"><!-- Begin 3 columns container -->
+        
+           <div class="col_1">
+                <a href="http://www.airport.lk/shop_dine_&amp;_relax/shop.php"><h3>Shop</h3></a>
+                <ul style="display: none;">
+                    <li><a href="http://www.airport.lk/shop_dine_&amp;_relax/shop/shopping.php">Shopping</a></li>
+                    <li><a href="http://www.airport.lk/shop_dine_&amp;_relax/shop/duty_free_allowances.php">Duty Free Allowances</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+               <a href="http://www.airport.lk/shop_dine_&amp;_relax/dine.php"><h3>Dine</h3></a>
+                <ul style="display: none;">
+                    
+                    <li><a href="http://www.airport.lk/shop_dine_&amp;_relax/dine/restaurants.php">Restaurants</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/shop_dine_&amp;_relax/relax.php"><h3>Relax</h3></a>
+                <ul style="display: none;">
+                    <li><a href="http://www.airport.lk/shop_dine_&amp;_relax/relax/transit_hotel.php">Transit Hotel</a></li>
+                    <li><a href="http://www.airport.lk/shop_dine_&amp;_relax/relax/health_beauty_&amp;_leisure.php">Health, Beauty &amp; Leisure</a></li>
+                </ul>
+            </div>
+        </div><!-- End 3 columns container -->
+    </li>
+    <!-- End Shop Dine & Relax -->
+
+	<li class="menu_left"><a href="http://www.airport.lk/services/services.php" class="drop title"><span><strong>Services</strong></span></a>
+    
+		<div class="dropdown_1column">
+        
+            <div class="col_1">
+                
+                    <ul class="simple">
+                        <li><a href="http://www.airport.lk/services/aviation_security.php">Aviation Security</a></li>  
+                         <li><a href="http://www.airport.lk/services/bank_money_exchange.php">Bank &amp; Money Exchange</a></li>    
+                         <li><a href="http://www.airport.lk/services/medical_service.php">Medical Service</a></li>
+                      	<li><a href="http://www.airport.lk/services/baggage_services.php">Baggage Services</a></li>
+                        <li><a href="http://www.airport.lk/services/pet_assistance.php">Pet Assistance</a></li>
+                  </ul>   
+            </div>
+		</div>
+	</li>
+
+    <li><a href="http://www.airport.lk/lounges/lounges_bia.php" class="drop title"><span><strong>Lounges</strong></span></a><!-- Begin Lounges -->
+    
+        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
+        
+           <div class="col_1">
+                <a href="http://www.airport.lk/lounges/silk_route.php"><h3>Silk Route</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/lounges/pre-paid_package.php">Pre-paid Package Services</a></li>
+                    <li><a href="http://www.airport.lk/lounges/loyalty_program.php">Loyalty Program</a></li>
+                    <li><a href="http://www.airport.lk/lounges/indvidual_bookings.php">Indvidual Bookings</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/lounges/lounges.php"><h3>Lounges</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/lounges/lotus_lounge.php">Lotus Lounge</a></li>
+                    <li><a href="http://www.airport.lk/lounges/araliya_lounge.php">Araliya Lounge</a></li>
+                    <li><a href="http://www.airport.lk/lounges/executive_lounge.php">Executive Lounge</a></li>
+              </ul>
+            </div>
+            
+            <div class="col_1">
+                <a href="http://www.airport.lk/lounges/faq.php"><h3>FAQ</h3></a>
+                <ul>
+                    <li><a href="http://www.airport.lk/lounges/faq.php">Frequently asked questions</a></li>
+                </ul>
+            </div>
+           
+        </div><!-- End 3 columns container -->
+    </li>
+    <!-- End Lounges -->
+
+    
+<!--	<li class="menu_right"><a href="#" class="drop title"><span><strong>Contact Us</strong></span></a>
+    
+		<div class="dropdown_1column align_right">
+        
+            <div class="col_1">
+                
+                    <ul class="simple">
+                        <li><a href="#">Contact Us</a></li>
+                      
+                  </ul>   
+            </div>
+		</div>
+	</li>-->
+</ul>
+</div>
+<!-- end Mega Menu --><script type="text/javascript" src="./indvidual_bookings.php_files/jquery-1.11.1.js.download"></script>     
+ <link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/bootstrap1.min.css">
+ <script type="text/javascript" src="./indvidual_bookings.php_files/bootstrap.js.download"></script> 
+ 
+<!--<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Important!</strong>&nbsp;&nbsp;&nbsp;Temporary closure of Departure Silk Route from 03rd July to 20th July
+</div>-->
+<link rel="stylesheet" type="text/css" href="./indvidual_bookings.php_files/bootstrap-iso.css">
+<div class="container">
+<img src="indvidual_bookings.php_files/sliderimg.jpg" style="border-radius:4px;">
+</div>
+<!-- ContentPage (In-use) -->
+<div id="sub_page_wrapper">
+<div class="container_12 clearfix">
+    <div class="grid_12 clearfix">
+        <div class="generic_content_page clearfix png_bg">
+            <div class="generic_content_menu_top"></div>
+            <div class="grid_2 alpha">
+                <div id="contentPage_pnlInnerContent1" class="generic_content_menu">
+
+
+	<div>
+<div class="generic_content_menu_title">Lounges</div>
+
+<div class="left-nav">
+<ul>
+    <li><a href="http://www.airport.lk/lounges/silk_route.php">Silk Route<img class="arrows" src="./indvidual_bookings.php_files/menu_drop.png" alt="↓"></a>
+    <ul>
+    <li><a href="http://www.airport.lk/lounges/pre-paid_package.php">Pre-paid Package Services</a></li>
+    <li><a href="http://www.airport.lk/lounges/loyalty_program.php">Loyalty Program</a></li>
+    <li><a href="http://www.airport.lk/lounges/indvidual_bookings.php" class="select">Indvidual Bookings</a></li>
+    </ul>
+    </li>
+    
+    <li><a href="http://www.airport.lk/lounges/lounges.php">Lounges<img class="arrows" src="./indvidual_bookings.php_files/menu_drop.png" alt="↓"></a>
+    <ul>
+    
+    <li><a href="http://www.airport.lk/lounges/lotus_lounge.php">Lotus Lounge</a></li>
+    <li><a href="http://www.airport.lk/lounges/araliya_lounge.php">Araliya Lounge</a></li>
+    
+    <li><a href="http://www.airport.lk/lounges/executive_lounge.php">Executive Lounge</a></li>
+    </ul>
+    </li>
+
+   	<li><a href="http://www.airport.lk/lounges/faq.php">FAQ<img class="arrows" src="./indvidual_bookings.php_files/menu_drop.png" alt="↓"></a>
+    <ul>
+    <li><a href="http://www.airport.lk/lounges/faq.php">FAQ</a></li>
+    </ul>
+    </li>
+    <p>&nbsp;</p>
+    <img src="./indvidual_bookings.php_files/nav_Lounges.jpg" width="197">
+</ul>
+
+</div>
+                
+            
+</div></div>
+            </div>
+            <div class="grid_10 omega">
+                <div id="contentPage_pnlInnerContent2">
+	<div>
+		
+                
+<!-- ContentPageBody -->
+<div id="contentPage_ctl01_ContentPageBody_wrapDiv">
+
+    <div id="contentPage_ctl01_ContentPageBody_pnlInnerContent1">
+			<div>
+				
+                        
+                        
+<div class="breadcrumbs">
+	<span class="breadcrumb_link">
+                    
+                    <a class="breadcrumb" href="http://www.airport.lk/">Home</a> » <a class="breadcrumb" href="http://www.airport.lk/lounges">Lounges</a> » Indvidual Bookings 
+     </span>
+          
+    <span class="floatRight">
+    <img src="./indvidual_bookings.php_files/email.gif"><a class="print" href="javascript:mailpage()">Email this Article</a>
+    <img src="./indvidual_bookings.php_files/print.gif"><a class="print" href="javascript:print()">Print this page</a>
+    </span>     
+</div>
+                        
+<h1 class="page_heading">Vacancies</h1> 
+			</div>
+		</div>
+
+    <div id="contentPage_ctl01_ContentPageBody_pnlInnerContent2">
+			<div>
+				
+                        <div class="body_content">
+                            <div class="rich_text">
+                              <!--<div class="spacePara"></div>-->
+                               
+                              
+                              <div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Secretary Grade lll</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="indvidual_bookings.php_files/silk_route_departure350x180.jpg"
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">
+                                         Qalification & Experiences
+                                       <br>
+                                  
+
+<!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    * Should Have passed GCE (O/L) Examination atleast six (6) subjects including credit pass for the English.
+                              		    <br>
+                                    <!-- modal start -->
+                                    <div class="bootstrap-iso">
+                                    <!-- Button trigger modal -->
+<br>
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#myModal">Read More...</a>
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel"></h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Arrival_and_Departure.png" alt="Silk Route Map" width="780" height="524">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                                    
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#ruby_more"></a>          
+                                    </div>
+                                    <!-- modal end -->
+                          
+                                    </td>
+                              		<td width="19%" valign="middle" class="style9">
+
+
+                                  <span class="bold"></span>
+                                  <!--<button type="button" class="btn btn-primary btn-sm">Small</button>-->
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=1"><!--<a href="ruby_package1.php">-->Apply Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>       
+
+<div class="space"></div>
+<div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Secretary Grade lll</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="indvidual_bookings.php_files/silk_route_departure350x180.jpg"
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">
+                                        
+                                         Qalification & Experiences
+                                         <br>
+
+<!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    * Should Have passed GCE (O/L) Examination atleast six (6) subjects including credit pass for the English.
+                              		    <br>
+                                    
+                                    <!-- modal start -->
+                                    <div class="bootstrap-iso">
+<br>                                    <!-- Button trigger modal -->
+
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#bannerformmodal">Read More...</a>
+
+<!-- Modal -->
+<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Departure Silk Route Map</h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Departure_Silk_Route.png" alt="Silk Route Map" width="780" height="259">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of map modal -->
+
+<!-- start more infor modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#sapphire_more">More details..</a>
+
+                                    </div>
+                                    <!-- modal end -->
+                                    </td>
+                              		<td width="19%" valign="middle" class="style9">
+
+                                  <span class="bold"></span>
+                                  
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=2">Apply Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>
+                            <div class="space"></div>
+                            <div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Amethyst Package</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="./indvidual_bookings.php_files/saphire&amp;amethyst.jpg">
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">
+                                        Qalification & Experiences
+                                        <br>
+                                        
+                                        
+
+<!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    (I). Should Have passed GCE (O/L) Examination atleast six (6) subjects including credit pass for the English.
+                              		    <br>
+                                   
+                                   <!-- modal start -->
+                                    <div class="bootstrap-iso">
+                                    <!-- Button trigger modal -->
+
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#bannerformmodalAmethyst">Silk Route Map</a>
+
+<!-- Modal -->
+<div class="modal fade bannerformmodalAmethyst" tabindex="-1" role="dialog" aria-labelledby="bannerformmodalAmethyst" aria-hidden="true" id="bannerformmodalAmethyst">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Arrival &amp; Departure Silk Route Map</h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Arrival_and_Departure.png" alt="Silk Route Map" width="780" height="524">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                                    
+                                    <!-- start more infor modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#amethyst_more">More details..</a> 
+                                    </div>
+                                    <!-- modal end -->
+                                  
+                                   </td>
+                              		<td width="19%" valign="middle" class="style9">Total Price
+Per Pax/ 3hrs
+
+                                  <span class="bold">$ 95</span>
+                                  <!--<button type="button" class="btn btn-primary btn-sm">Small</button>-->
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=3">Book Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>
+                            <div class="space"></div> 
+
+<div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Topaz Arrival Package</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="./indvidual_bookings.php_files/topaz_arrival.jpg">
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">
+                                        Silk Route Arrival<br>
+
+                                        <!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    Opening Hours : 24 hours<br>
+                              		    Children under 02 Years free of charge<br>
+                              		    <br>
+                                    
+                                    
+                                    <!-- modal start -->
+                                    <div class="bootstrap-iso">
+                                    <!-- Button trigger modal -->
+
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#bannerformmodalArrival">Silk Route Map</a>
+
+<!-- Modal -->
+<div class="modal fade bannerformmodalArrival" tabindex="-1" role="dialog" aria-labelledby="bannerformmodalArrival" aria-hidden="true" id="bannerformmodalArrival">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Arrival Silk Route Map</h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Arrival_Silk_Route.png" alt="Silk Route Map" width="780" height="259">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                                   
+                                   
+                                   
+                                   <!-- start more infor modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#topaz_a_more">More details..</a>        
+                                    </div>
+                                    <!-- modal end -->
+                                    
+                            
+                                    </td>
+                              		<td width="19%" valign="middle" class="style9">Total Price
+Per Pax
+
+                                 <br> <span class="bold">$ 50</span>
+                                  <!--<button type="button" class="btn btn-primary btn-sm">Small</button>-->
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=4&amp;name=Topaz_Arrv">Book Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>
+                            <div class="space"></div> 
+                            
+                            <div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Topaz Departure Package</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="./indvidual_bookings.php_files/silk_route_dept.png">
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">                                        Silk Route Departure<br>
+
+                                        <!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    Opening Hours : 24 hours<br>
+                              		    Children under 02 Years free of charge<br>
+                              		    <br>
+                                    
+                                    <!-- modal start -->
+                                    <div class="bootstrap-iso">
+                                    <!-- Button trigger modal -->
+
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#bannerformmodal">Silk Route Map</a>
+
+<!-- Modal -->
+<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Departure Silk Route Map</h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Departure_Silk_Route.png" alt="Silk Route Map" width="780" height="259">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                                    
+                                    <!-- start more infor modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#topaz_d_more">More details..</a>        
+                                    </div>
+                                    <!-- modal end -->
+                            
+                                    
+                                    </td>
+                              		<td width="19%" valign="middle" class="style9">Total Price
+Per Pax<br>
+
+                                  <span class="bold">$ 50</span>
+                                  <!--<button type="button" class="btn btn-primary btn-sm">Small</button>-->
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=5&amp;name=Topaz_Dept">Book Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>
+                            
+                            <div class="space"></div> 
+                            <div id="subPageTableDutyfree">
+                              <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              	<tbody><tr>
+                              		<th colspan="3"><div align="left">Garnet Package</div>                                   	    <div align="left"></div><div align="left"></div></th>
+                                </tr>
+                                
+                                
+								<tr bgcolor="#FFFFFF">
+                                	<td width="33%" class="style9">
+                                    <img src="./indvidual_bookings.php_files/saphire&amp;amethyst.jpg">
+									</td>
+                              			<td width="48%" class="style9">
+                                        <span style="font-size:14px; font-weight:bold;">                                        Executive Lounge
+
+<!--Classic Electronic's (Pvt) Ltd--></span>
+                              		    <div class="space"></div>
+                              		    Opening Hours : 24 hours<br>
+                              		    Children under 02 Years free of charge<br>
+                              		    <br>
+                                    
+                                    <!-- modal start -->
+                                    <div class="bootstrap-iso">
+                                    <!-- Button trigger modal -->
+
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#bannerformmodal">Silk Route Map</a>
+
+<!-- Modal -->
+<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Departure Silk Route Map</h4>
+        
+      </div>
+      <div class="modal-body">
+       <div align="center">
+       <img src="./indvidual_bookings.php_files/Departure_Silk_Route.png" alt="Silk Route Map" width="780" height="259">
+      	</div>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+                                   
+                                   <!-- start more infor modal -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.airport.lk/lounges/indvidual_bookings.php#" data-toggle="modal" data-target="#garnet_more">More details..</a> 
+                                    </div>
+                                    <!-- modal end -->
+                                   
+                                    
+                                    </td>
+                              		<td width="19%" valign="middle" class="style9">Total Price
+Per Pax/ 3hrs
+
+                                  <span class="bold">$ 15</span>
+                                  <!--<button type="button" class="btn btn-primary btn-sm">Small</button>-->
+                                  <p><a href="http://www.airport.lk/lounges/package.php?id=6">Book Now</a></p>
+                                  </td>
+                       		    </tr>
+                                
+                                                                  		
+                                                                  </tbody></table>
+                            </div>
+
+
+                            </div>
+                        </div>
+                        
+
+
+                    
+			</div>
+		</div>
+
+</div>
+            
+	</div>
+</div>
+            </div>
+         </div>
+    </div>
+ </div>
+    
+</div>
+<!-- Modal -->
+<div class="bootstrap-iso">
+<!--start ruby more info-->
+<div class="modal fade ruby_more" tabindex="-1" role="dialog" aria-labelledby="ruby_more" aria-hidden="true" id="ruby_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Ruby Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/silk_route_departure350x180.jpg"><h7>Welcome to the Silk Route Lounge</h7></div>
+          <div class="col-md-6 row-height-text2">
+          
+          <p><strong>Package Included</strong><br>Silk Route Arrival Lounge<br>Silk Route Departure Lounge<br>Executive Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 110</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+          
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      <p><strong>Silk Route Arrival Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest as he disembarks and accompanying him to the Silk Route Lounge by Airport staff</li>
+      <li>Baggage collection and delivery by Airport staff</li>
+      <li>Internet, WiFi, Audio Visual Entertainment</li>
+      <li>Dedicated exit passage way and parking</li>
+    </ul>
+    
+      <p><strong>Silk Route Departure Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest by Airport staff at the entrance to the 'Silk Route' Lounge.</li>
+      <li>Baggage will be collected and screened by the Airport staff and the Guest will be escorted to the 'Silk Route' Lounge.</li>
+      <li>Check-in procedures will be attended to by the Airport staff while the Guest relaxes in the 'Silk Route' Lounge.</li>
+      <!--<li>Immigration and Customs procedures will be taken care of by Airport staff.</li>-->
+      <li>After completion of formalities, the guest will be escorted to the Transit/Boarding Area through a dedicated passage. Airport staff will be with the guest right through his journey across the Departure Terminal</li>
+    </ul>
+    
+   <!-- <h5><span class="underline">Executive Lounge Facilities:</span></h5>-->
+       <p><strong>Executive Lounge:</strong></p>
+      <ul class="body_bullet_bia">
+      <li>Internet</li>
+      <li>Telephone (Local Calls)</li>
+      <li>Pleasant Environment</li>
+      </ul>
+    
+    
+       <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Arr220x135.jpg" title="Silk Route Arrival Lounge"><h7>Silk Route Arrival Lounge</h7></div>
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Dep220x135.jpg" title="Silk Route Departure Lounge"><h7>Silk Route Departure Lounge</h7></div>
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Executive220x135.jpg" title="Executive Lounge"><h7>Executive Lounge</h7></div>
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<!--start sapphire more info-->
+<div class="modal fade sapphire_more" tabindex="-1" role="dialog" aria-labelledby="sapphire_more" aria-hidden="true" id="sapphire_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Sapphire Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/Silk_Route_dep350x180.jpg"></div>
+          <div class="col-md-6 row-height-text">
+          
+          <p><strong>Package Included</strong><br>Silk Route Departure Lounge<br>Executive Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 65</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      <p><strong>Silk Route Departure Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest by Airport staff at the entrance to the 'Silk Route' Lounge.</li>
+      <li>Baggage will be collected and screened by the Airport staff and the Guest will be escorted to the 'Silk Route' Lounge.</li>
+      <li>Check-in procedures will be attended to by the Airport staff while the Guest relaxes in the 'Silk Route' Lounge.</li>
+      <!--<li>Immigration and Customs procedures will be taken care of by Airport staff.</li>-->
+      <li>After completion of formalities, the guest will be escorted to the Transit/Boarding Area through a dedicated passage. Airport staff will be with the guest right through his journey across the Departure Terminal</li>
+    </ul>
+    
+   <!-- <h5><span class="underline">Executive Lounge Facilities:</span></h5>-->
+       <p><strong>Executive Lounge:</strong></p>
+      <ul class="body_bullet_bia">
+      <li>Internet</li>
+      <li>Telephone (Local Calls)</li>
+      <li>Pleasant Environment</li>
+      </ul>
+    
+    
+       <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Dep220x135.jpg" title="Silk Route Departure Lounge"><h7>Silk Route Departure Lounge</h7></div>
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Executive220x135.jpg" title="Executive Lounge"><h7>Executive Lounge</h7></div>
+
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<!--start Amethyst more info-->
+<div class="modal fade amethyst_more" tabindex="-1" role="dialog" aria-labelledby="amethyst_more" aria-hidden="true" id="amethyst_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Amethyst Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/Silk_Route_Arr350x180.jpg"></div>
+          <div class="col-md-6 row-height-text">
+          
+          <p><strong>Package Included</strong><br>Silk Route Arrival Lounge<br>Silk Route Departure Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 95</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      <p><strong>Silk Route Arrival Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest as he disembarks and accompanying him to the Silk Route Lounge by Airport staff</li>
+      <li>Baggage collection and delivery by Airport staff</li>
+      <li>Internet, WiFi, Audio Visual Entertainment</li>
+      <li>Dedicated exit passage way and parking</li>
+    </ul>
+    
+    	<p><strong>Silk Route Departure Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest by Airport staff at the entrance to the 'Silk Route' Lounge.</li>
+      <li>Baggage will be collected and screened by the Airport staff and the Guest will be escorted to the 'Silk Route' Lounge.</li>
+      <li>Check-in procedures will be attended to by the Airport staff while the Guest relaxes in the 'Silk Route' Lounge.</li>
+      <!--<li>Immigration and Customs procedures will be taken care of by Airport staff.</li>-->
+      <li>After completion of formalities, the guest will be escorted to the Transit/Boarding Area through a dedicated passage. Airport staff will be with the guest right through his journey across the Departure Terminal</li>
+    </ul>
+    
+ 
+       <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Arr220x135.jpg" title="Silk Route Arrival Lounge"><h7>Silk Route Arrival Lounge</h7></div>
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Dep220x135.jpg" title="Silk Route Departure Lounge"><h7>Silk Route Departure Lounge</h7></div>
+
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<!--start Topaz Arrival more info-->
+<div class="modal fade topaz_a_more" tabindex="-1" role="dialog" aria-labelledby="topaz_a_more" aria-hidden="true" id="topaz_a_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Topaz Arrival Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/Silk_Route_Arr350x180.jpg"></div>
+          <div class="col-md-6 row-height-text">
+          
+          <p><strong>Package Included</strong><br>Silk Route Arrival Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 50</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      <p><strong>Silk Route Arrival Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest as he disembarks and accompanying him to the Silk Route Lounge by Airport staff</li>
+      <li>Baggage collection and delivery by Airport staff</li>
+      <li>Internet, WiFi, Audio Visual Entertainment</li>
+      <li>Dedicated exit passage way and parking</li>
+    </ul>
+    
+       <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Arr220x135.jpg" title="Silk Route Arrival Lounge"><h7>Silk Route Arrival Lounge</h7></div>
+
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<!--start Topaz Departure more info-->
+<div class="modal fade topaz_d_more" tabindex="-1" role="dialog" aria-labelledby="topaz_d_more" aria-hidden="true" id="topaz_d_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Topaz Departure Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/Silk_Route_dep350x180.jpg"></div>
+          <div class="col-md-6 row-height-text">
+          
+          <p><strong>Package Included</strong><br>Silk Route Departure Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 50</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      <p><strong>Silk Route Departure Lounge:</strong></p>
+      
+      <ul class="body_bullet_bia">
+      <li>Receiving the guest by Airport staff at the entrance to the 'Silk Route' Lounge.</li>
+      <li>Baggage will be collected and screened by the Airport staff and the Guest will be escorted to the 'Silk Route' Lounge.</li>
+      <li>Check-in procedures will be attended to by the Airport staff while the Guest relaxes in the 'Silk Route' Lounge.</li>
+      <!--<li>Immigration and Customs procedures will be taken care of by Airport staff.</li>-->
+      <li>After completion of formalities, the guest will be escorted to the Transit/Boarding Area through a dedicated passage. Airport staff will be with the guest right through his journey across the Departure Terminal</li>
+    </ul>
+    
+         <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Silk_Route_Dep220x135.jpg" title="Silk Route Departure Lounge"><h7>Silk Route Departure Lounge</h7></div>
+
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+<!--start Garnet  more info-->
+<div class="modal fade garnet_more" tabindex="-1" role="dialog" aria-labelledby="garnet_more" aria-hidden="true" id="garnet_more">
+
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title page_heading" id="myModalLabel">Garnet Package</h4>
+        
+      </div>
+      <div class="modal-body">
+      <p>If you are an air traveler who thinks airport formalities are a hassle, here is the perfect way to avoid it.</p>
+      <div class="space"></div>
+       <div class="row">
+          
+          <div class="col-md-6"><img src="./indvidual_bookings.php_files/Executive350x180.jpg"></div>
+          <div class="col-md-6 row-height-text">
+          
+          <p><strong>Package Included</strong><br>Executive Lounge</p>
+          <p><strong>Opening Hours</strong><br>24 hours daily.</p>
+          <p><strong>Total Price per Pax</strong><br>$ 15</p>
+          <p><strong>Conditions</strong><br>Maximum 3 hour stay - Children under 02 years are admitted free</p>
+
+			</div>
+          <div class="col-md-2"></div>
+       </div>  
+       
+       
+      <div class="space"></div>
+      <h5><span class="underline">Facilities:</span></h5>
+      
+       <p><strong>Executive Lounge:</strong></p>
+      <ul class="body_bullet_bia">
+      <li>Internet</li>
+      <li>Telephone (Local Calls)</li>
+      <li>Pleasant Environment</li>
+      </ul>
+    
+    
+       <div class="row">
+          <div class="col-md-4"><img src="./indvidual_bookings.php_files/Executive220x135.jpg" title="Executive Lounge"><h7>Executive Lounge</h7></div>
+       </div>   
+      
+      <p>&nbsp;</p>
+      <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+      </div>
+      <div class="modal-footer">
+    
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--end-->
+</div>
+<!-- end bootstrap iso-->
+<script src="./indvidual_bookings.php_files/jquery.min.js.download"></script>
+<script src="./indvidual_bookings.php_files/bootstrap.min.js.download"></script>
+<div id="shareIcons">
+
+	<div class="icons">
+		 &nbsp;<span class="info-share"></span>	</div>
+        
+<!--<div class="cornerBottomLeftReverseBlue"></div>-->
+	<div class="cornerBottomRightReverseBlue">
+    
+	<ul class="socialcount socialcount-small" data-url="http://www.airport.lk" data-counts="true" data-share-text="Airport &amp; Aviation Services (Sri Lanka) Ltd.">
+</ul>
+    </div>
+</div><!--End ShareCons-->
+<div id="footer">
+<div class="lineyellow"></div>
+    <div id="footerMenu" class="clearfix">
+     	<ul class="level-1">
+                	<li>
+                    	<a href="http://www.airport.lk/aasl/contact_us/contact_us.php">Contact us</a>
+                  <!--<ul class="level-2">
+                    <li><a href="#">Airlines at BIA</a></li>
+                    <li><a href="#">Flight Status</a></li>
+                    <li><a href="#">Flight Schedule</a></li>
+                  </ul>-->
+                    </li>
+
+                  <!--<li><a href="#">Contact us</a>
+                 <ul class="level-2">
+                 	<li><a href="#">Chairmans Welcome</a></li>
+                    <li><a href="#">Arrival</a></li>
+                    <li><a href="#">Departure</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Shopping &amp; Dining</a></li>
+                    <li><a href="#">Lounges</a></li>
+                  </ul>
+                   </li>-->
+
+                <!-- <li><a href="#">Sitemap</a>
+                <ul class="level-2">
+                   <li><a href="#">To &amp; From Airport</a></li>
+                   <li><a href="#">Parking</a></li>
+                   <li><a href="#">Airport Map</a></li>
+                 </ul>-->
+                  
+		</ul>
+     </div>
+
+    <div class="infoslegales clearfix">
+                <ul>
+                	<li class="footer_note">© 2009 - 2015 Airport &amp; Aviation Services (Sri Lanka) Limited, All rights reserved.</li>
+                    <li><a href="http://home.airport.lk/">Member Services</a></li>
+                    <li><a href="http://www.airport.lk/members/members.html">Members Login:</a></li>
+                 </ul>
+            </div>
+<div class="fb">
+<a href="https://www.facebook.com/welcometoSilkRoute/" target="_blank"><img class="social" src="./indvidual_bookings.php_files/social_media.png"></a>  
+</div>
+
+        <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/welcometoSilkRoute" data-layout="standard" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2FwelcometoSilkRoute&amp;layout=standard&amp;locale=en_GB&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 450px; height: 20px;"><iframe name="f3f8031475e7e78" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./indvidual_bookings.php_files/like.html" style="border: none; visibility: visible; width: 450px; height: 20px;" class=""></iframe></span></div>
+    <img class="logo" src="./indvidual_bookings.php_files/logo.png" width="150" alt="AASL Logo">
+    
+    
+    <!--<div class="visitcountText"> Visitors Counter: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="visitcount"><h2> <script type="text/javascript" src="http://counter7.freecounter.ovh/private/counter.js?c=9b16c3fe2cd90272eb99fa0184df4f0e"></script></h2> </div>-->
+
+<!-- FIN Footer -->
+  </div><!-- End container -->
+</div><!--End Bg-image-->
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./indvidual_bookings.php_files/1FegrZjPbq3.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./indvidual_bookings.php_files/1FegrZjPbq3(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</div></div></body></html>
