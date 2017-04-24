@@ -113,6 +113,7 @@
     <Compile Include="Controllers\EduQualificationsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\VacanciesController.cs" />
     <Compile Include="Global.asax.cs" />
     <Compile Include="Models\Applicant.cs">
       <DependentUpon>ApplicantModel.tt</DependentUpon>
@@ -168,6 +169,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Vacancy.cs">
+      <DependentUpon>VacancyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +236,16 @@
       <DependentUpon>UserModel.edmx</DependentUpon>
       <LastGenOutput>UserModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\VacancyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+      <LastGenOutput>VacancyModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\VacancyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+      <LastGenOutput>VacancyModel.cs</LastGenOutput>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -233,6 +262,13 @@
     </EntityDeploy>
     <Content Include="Models\EduQualificationModel.edmx.diagram">
       <DependentUpon>EduQualificationModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\VacancyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VacancyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\VacancyModel.edmx.diagram">
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -267,6 +303,11 @@
     <Content Include="Views\EduQualifications\Details.cshtml" />
     <Content Include="Views\EduQualifications\Edit.cshtml" />
     <Content Include="Views\EduQualifications\Index.cshtml" />
+    <Content Include="Views\Vacancies\Create.cshtml" />
+    <Content Include="Views\Vacancies\Delete.cshtml" />
+    <Content Include="Views\Vacancies\Details.cshtml" />
+    <Content Include="Views\Vacancies\Edit.cshtml" />
+    <Content Include="Views\Vacancies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Users.cshtml" />
