@@ -98,7 +98,85 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+<<<<<<< HEAD
     <Compile Include="Global.asax.cs" />
+=======
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\VacanciesController.cs" />
+    <Compile Include="Global.asax.cs" />
+    <Compile Include="Models\Applicant.cs">
+      <DependentUpon>ApplicantModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApplicantModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicantModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApplicantModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicantModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ApplicantModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicantModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EduQualification.cs">
+      <DependentUpon>EduQualificationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EduQualificationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EduQualificationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EduQualificationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EduQualificationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EduQualificationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EduQualificationModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>ApplicantModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Vacancy.cs">
+      <DependentUpon>VacancyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VacancyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+    </Compile>
+>>>>>>> 254cd5469fb4092bb2b23a59380b6ab7ecb06eed
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,9 +196,79 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Global.asax" />
+<<<<<<< HEAD
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+=======
+    <Content Include="Models\ApplicantModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ApplicantModel.edmx</DependentUpon>
+      <LastGenOutput>ApplicantModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ApplicantModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ApplicantModel.edmx</DependentUpon>
+      <LastGenOutput>ApplicantModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\EduQualificationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EduQualificationModel.edmx</DependentUpon>
+      <LastGenOutput>EduQualificationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\EduQualificationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EduQualificationModel.edmx</DependentUpon>
+      <LastGenOutput>EduQualificationModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\UserModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UserModel.edmx</DependentUpon>
+      <LastGenOutput>UserModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\UserModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UserModel.edmx</DependentUpon>
+      <LastGenOutput>UserModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\VacancyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+      <LastGenOutput>VacancyModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\VacancyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+      <LastGenOutput>VacancyModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\ApplicantModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ApplicantModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ApplicantModel.edmx.diagram">
+      <DependentUpon>ApplicantModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\EduQualificationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EduQualificationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\EduQualificationModel.edmx.diagram">
+      <DependentUpon>EduQualificationModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\VacancyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VacancyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\VacancyModel.edmx.diagram">
+      <DependentUpon>VacancyModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+>>>>>>> 254cd5469fb4092bb2b23a59380b6ab7ecb06eed
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -134,6 +282,56 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\Applicants\Create.cshtml" />
+    <Content Include="Views\Applicants\Delete.cshtml" />
+    <Content Include="Views\Applicants\Details.cshtml" />
+    <Content Include="Views\Applicants\Edit.cshtml" />
+    <Content Include="Views\Applicants\Index.cshtml" />
+    <Content Include="Views\EduQualifications\Create.cshtml" />
+    <Content Include="Views\EduQualifications\Delete.cshtml" />
+    <Content Include="Views\EduQualifications\Details.cshtml" />
+    <Content Include="Views\EduQualifications\Edit.cshtml" />
+    <Content Include="Views\EduQualifications\Index.cshtml" />
+    <Content Include="Views\Vacancies\Create.cshtml" />
+    <Content Include="Views\Vacancies\Delete.cshtml" />
+    <Content Include="Views\Vacancies\Details.cshtml" />
+    <Content Include="Views\Vacancies\Edit.cshtml" />
+    <Content Include="Views\Vacancies\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Users.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\UserModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UserModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\UserModel.edmx.diagram">
+      <DependentUpon>UserModel.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Users\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Users\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Users\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Users\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Users\Index.cshtml" />
+>>>>>>> 254cd5469fb4092bb2b23a59380b6ab7ecb06eed
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
