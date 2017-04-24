@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Recruitment_Support_System.Models;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -26,6 +29,28 @@ namespace Recruitment_Support_System.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Users()
+        {
+            String connectionString = ConfigurationManager.ConnectionStrings["RecruitmentDB"].ToString();
+            String sql = "SELECT * FROM User";
+
+            var model = new List<User>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                conn.Open();
+                SqlDataReader rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    var user = new User();
+                    user.FirstName = rdr["FirstName"].ToString();
+                    user.LastName = rdr["LastName"].ToString();
+                    model.Add(user);
+                }
+            }
+            return View(model);
         }
     }
 }
