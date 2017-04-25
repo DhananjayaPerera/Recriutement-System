@@ -52,7 +52,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 db.Applicants.Add(applicant);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create", "EduQualifications");
             }
 
             return View(applicant);
