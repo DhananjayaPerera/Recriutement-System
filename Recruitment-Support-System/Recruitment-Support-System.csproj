@@ -198,6 +198,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\detailformcss\bootstrap-iso.css" />
+    <Content Include="Content\detailformcss\bootstrap1.min.css" />
+    <Content Include="Content\detailformcss\menu.css" />
+    <Content Include="Content\detailformcss\siteaccess.css" />
+    <Content Include="Content\image\newmyimg1.jpeg" />
+    <Content Include="Content\image\pora.jpg" />
+    <Content Include="Content\image\woman-as-desk-doing-paperwork.jpg" />
     <Content Include="Content\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -329,6 +336,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

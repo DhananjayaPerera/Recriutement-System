@@ -6,7 +6,8 @@
 
 <h2>Details</h2>
 
-<div>
+
+<!--<div>
     <h4>Vacancy</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -43,7 +44,7 @@
         </dd>
 
     </dl>
-</div>
+</div> 
 
 <div class="btn btn-default">
     @Html.ActionLink("Apply", "Create", "Applicants")
@@ -52,4 +53,144 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.VacancyId }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>   -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)http://www.airport.lk/lounges/indvidual_bookings.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js=js cssanimations=cssanimations csstransitions"=csstransitions" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="http://www.airport.lk/site_img/favicon.ico" />
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href="~/Content/detailformcss/bootstrap-iso.css" rel="stylesheet" />
+    <link href="~/Content/detailformcss/bootstrap1.min.css" rel="stylesheet" />
+    <link href="~/Content/detailformcss/menu.css" rel="stylesheet" />
+    <link href="~/Content/detailformcss/siteaccess.css" rel="stylesheet" />
+
+    
+    <script type="text/javascript">
+   $(document).ready(function () {
+    $('#menu li').hover(
+        function () {
+            $('ul', this).stop(true, true).slideDown(400);
+        },
+        function () {
+            $('ul', this).stop(true, true).slideUp(400);
+        });
+});
+    </script>
+
+
+    <script type="text/javascript">
+
+
+
+function slideSwitch() {
+    var $active = $('#slideshow DIV.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow DIV:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 4000 );
+});
+
+    </script>
+    <!-- google analytic tool -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37828960-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+    <!--Slider-->
+
+
+</head>
+
+<div class="bootstrap-iso">
+    <!--start ruby more info-->
+    <div class="modal fade ruby_more in" tabindex="-1" role="dialog" aria-labelledby="ruby_more" aria-hidden="true" id="ruby_more" style="display: block; padding-left: 17px;">
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title page_heading" id="myModalLabel">
+                        <dt>@Html.DisplayNameFor(model => model.Title)</dt>
+                    </h4>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-left:85%;margin-top:-3%;">Apply Now</button>
+
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <dd>@Html.DisplayNameFor(model => model.Description)</dd>
+                    </p>
+                    <div class="space"></div>
+                    <div class="row">
+
+                        <div class="col-md-6"><img src="~/Content/image/newmyimg1.jpeg" /><h7>Welcome to the our job cateegory</h7></div>
+                        <div class="col-md-6 row-height-text2">
+                            
+
+
+
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+
+
+                    <div class="space"></div>
+                    <h5><strong><span class="underline">Qualifications:</span></strong></h5>
+
+                    <ul class="body_bullet_bia">
+                        <dd>@Html.DisplayNameFor(model => model.Qualifications)</dd>
+                    </ul>
+
+                    <!-- <h5><span class="underline">Executive Lounge Facilities:</span></h5>-->
+                    <div class="space"></div>
+                    <h5><strong><span class="underline">Responsibilities:</span></strong></h5>
+
+                    <ul class="body_bullet_bia">
+                        <dd>@Html.DisplayFor(model => model.Responsibilities)</dd>
+                    </ul>
+
+
+
+                    <p>&nbsp;</p>
+                    <p><strong>FOR INQUIRIES - +94 11 2256067/+94 11 2264753 </strong>   </p>
+                </div>
+                <div class="modal-footer">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</html>
