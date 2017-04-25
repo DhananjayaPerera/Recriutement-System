@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="VacancyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Vacancy">
           <Key>
             <PropertyRef Name="VacancyId" />
@@ -15,14 +15,14 @@
           <Property Name="Responsibilities" Type="text" />
           <Property Name="Qualifications" Type="text" />
         </EntityType>
-        <EntityContainer Name="masterModelStoreContainer">
+        <EntityContainer Name="VacancyModelStoreContainer">
           <EntitySet Name="Vacancy" EntityType="Self.Vacancy" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="VacancyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Vacancy">
           <Key>
             <PropertyRef Name="VacancyId" />
@@ -33,7 +33,7 @@
           <Property Name="Responsibilities" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Qualifications" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="vacancyEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="VacancyEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Vacancies" EntityType="Self.Vacancy" />
         </EntityContainer>
       </Schema>
@@ -41,9 +41,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="vacancyEntities">
+        <EntityContainerMapping StorageEntityContainer="VacancyModelStoreContainer" CdmEntityContainer="VacancyEntities">
           <EntitySetMapping Name="Vacancies">
-            <EntityTypeMapping TypeName="masterModel.Vacancy">
+            <EntityTypeMapping TypeName="VacancyModel.Vacancy">
               <MappingFragment StoreEntitySet="Vacancy">
                 <ScalarProperty Name="VacancyId" ColumnName="VacancyId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
