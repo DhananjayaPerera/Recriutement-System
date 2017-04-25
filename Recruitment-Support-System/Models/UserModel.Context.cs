@@ -13,10 +13,10 @@ namespace Recruitment_Support_System.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class RecruitmentEntities : DbContext
+    public partial class UserEntities : DbContext
     {
-        public RecruitmentEntities()
-            : base("name=RecruitmentEntities")
+        public UserEntities()
+            : base("name=UserEntities")
         {
         }
     

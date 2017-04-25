@@ -26,6 +26,5 @@ namespace Recruitment_Support_System.Models
         }
     
         public virtual DbSet<Applicant> Applicants { get; set; }
-        public virtual DbSet<User> Users { get; set; }
     }
 }

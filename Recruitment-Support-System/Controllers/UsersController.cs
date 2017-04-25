@@ -12,7 +12,7 @@ namespace Recruitment_Support_System.Controllers
 {
     public class UsersController : Controller
     {
-        private RecruitmentEntities db = new RecruitmentEntities();
+        private UserEntities db = new UserEntities();
 
         // GET: Users
         public ActionResult Index()
