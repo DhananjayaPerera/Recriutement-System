@@ -1,0 +1,13 @@
+﻿#contentPage_ctl01_ContentPageBody_pnlInnerContent2 {
+    width: 77%;
+    float: right;
+}
+
+.floatRight {
+    margin-right: 10px;
+    float: right;
+}
+
+#subPageTableDutyfree table tr {
+    font-size: 12pt;
+}

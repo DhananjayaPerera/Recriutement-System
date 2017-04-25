@@ -1,0 +1,119 @@
+.tabber {
+	float: left;
+	height: auto;
+	width: 450px;
+	position:absolute;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 27px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+.weather{
+	float: left;
+	height:30px;
+	width: 224px;
+	position:absolute;
+	margin-top: 10;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 28px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	background-image: url(../weather.png);
+	clear: both;
+	float: right;
+	left: 456px;
+	background-repeat: no-repeat;
+	top: 15px;
+}
+.bia-bt {
+	float: left;
+	height: 38px;
+	width: 206px;
+	background-image:url(../Images/bia.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+    cursor: pointer;
+	position:relative;
+	z-index:150;	
+}
+.aasl-bt {
+	float: left;
+	height: 38px;
+	width: 166px;
+	background-image:url(../aasl3.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+    cursor: pointer;
+	margin-left: -30px;
+	position:relative;
+	z-index:50;
+	
+}
+.hia-bt {
+	float: left;
+	height: 38px;
+	width: 206px;
+	background-image: url(../img/hia.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+    cursor: pointer;
+	margin-left: -25px;
+	position:relative;
+	z-index:25;
+}
+.rma-bt {
+	float: left;
+	height: 38px;
+	width: 206px;
+	background-image: url(../img/rma.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+    cursor: pointer;
+	margin-left: -25px;
+	position: absolute;
+	z-index:0;
+}
+
+
+.aasl{
+	height: 38px;
+	width: 166px;
+    float : left;
+	background-image:url(../Images/aasl3.png);
+	background-repeat: no-repeat;
+    background-position: left bottom;
+	cursor: pointer;
+	position:relative;
+	z-index:150;
+}
+.bia {
+    float: left;
+	height: 38px;
+	width: 206px;
+	background-image:url(../img/bia.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.hia {
+    float: left;
+	height: 38px;
+	width: 206px;
+	background-image: url(../img/hia.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.rma {
+    float: left;
+	height: 38px;
+	width: 206px;
+	background-image: url(../img/rma.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}

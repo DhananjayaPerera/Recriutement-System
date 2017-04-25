@@ -4,48 +4,42 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+        <p>
+            @*@Html.ActionLink("Create New", "Create")*@
+        </p>
+        <div id="subPageTableDutyfree">
+            <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>
+                        Position
+                        @*@Html.DisplayNameFor(model => model.Title)*@
+                    </th>
+                    <th>
+                        Closing Date
+                        @*@Html.DisplayNameFor(model => model.Description)*@
+                    </th>
+                    <th>
+                        View
+                        @*@Html.DisplayNameFor(model => model.Responsibilities)*@
+                    </th>
+                </tr>
 
-<p>
-    @*@Html.ActionLink("Create New", "Create")*@
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Responsibilities)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Qualifications)
-        </th>
-        <th></th>
-    </tr>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td bgcolor='#FFFFFF' class='style9'>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td bgcolor='#FFFFFF' class='style9'>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td bgcolor='#FFFFFF' class='style9'>
+                            @*@Html.ActionLink("Edit", "Edit", new { id=item.VacancyId }) |*@
+                            @Html.ActionLink("Details", "Details", new { id = item.VacancyId })
+                            @*@Html.ActionLink("Delete", "Delete", new { id=item.VacancyId })*@
+                        </td>
+                    </tr>
+                }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Responsibilities)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Qualifications)
-        </td>
-        <td>
-            @*@Html.ActionLink("Edit", "Edit", new { id=item.VacancyId }) |*@
-            @Html.ActionLink("Details", "Details", new { id=item.VacancyId }) |
-            @*@Html.ActionLink("Delete", "Delete", new { id=item.VacancyId })*@
-        </td>
-    </tr>
-}
-
-</table>
+            </table>
+        </div>

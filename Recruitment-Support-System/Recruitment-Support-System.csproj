@@ -198,7 +198,36 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\Images\aasl3.png" />
+    <Content Include="Content\Images\alpha.png" />
+    <Content Include="Content\Images\bg_ico_share_right.png" />
+    <Content Include="Content\Images\bg_smallsearch.png" />
+    <Content Include="Content\Images\bia.png" />
+    <Content Include="Content\Images\BlueTab.png" />
+    <Content Include="Content\Images\btn_search.png" />
+    <Content Include="Content\Images\drop.png" />
+    <Content Include="Content\Images\email.gif" />
+    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\gradient1.png" />
+    <Content Include="Content\Images\HoverBlue.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\logo_aasl.png" />
+    <Content Include="Content\Images\menu_drop.png" />
+    <Content Include="Content\Images\menu_left_bg.png" />
+    <Content Include="Content\Images\nav_Training.jpg" />
+    <Content Include="Content\Images\print.gif" />
+    <Content Include="Content\Images\sl_logo.jpg" />
+    <Content Include="Content\Images\sub_top_line.png" />
     <Content Include="Content\site.css" />
+    <Content Include="Content\Stylesheets\aasl.css" />
+    <Content Include="Content\Stylesheets\base.css" />
+    <Content Include="Content\Stylesheets\custom.css" />
+    <Content Include="Content\Stylesheets\menu.css" />
+    <Content Include="Content\Stylesheets\reset.css" />
+    <Content Include="Content\Stylesheets\siteaccess.css" />
+    <Content Include="Content\Stylesheets\style2.css" />
+    <Content Include="Content\Stylesheets\stylewidgetnew.css" />
+    <Content Include="Content\Stylesheets\tabs.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -278,23 +307,29 @@
       <DependentUpon>EduQualificationsModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\curvycorners.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.2.6.min.js" />
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr.custom.28468.js" />
     <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\widget.js" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\logo.png" />
+    <Content Include="Views\Shared\_Layout_Old.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -320,6 +355,7 @@
     <Content Include="Views\EduQualifications\Details.cshtml" />
     <Content Include="Views\EduQualifications\Edit.cshtml" />
     <Content Include="Views\EduQualifications\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Users.cshtml" />
@@ -330,6 +366,7 @@
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

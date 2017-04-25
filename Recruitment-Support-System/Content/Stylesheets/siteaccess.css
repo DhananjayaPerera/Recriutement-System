@@ -1,0 +1,68 @@
+/** -------------------------------------------------------------------------
+    CSS Document (http://www.w3.org/Style/CSS/)
+
+
+/**
+ * BODY
+ **********************************************************************/
+
+/*body, h1, h3, h4, h5, h6, a {
+    color: #26478E;
+	font-family: Arial, Helvetica, sans-serif;
+}
+*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+/*ul.listitem {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listitem li {
+    list-style: none;
+    padding: 0 0 3px 10px;
+    background: url('../images/skin/puce_grey.html') no-repeat left center;
+}
+
+.blocColor ul.listitem li {
+    background: url('../images/skin/puce_green.html') no-repeat left center;
+}*/
+
+
+/**
+ * HEADER
+ **********************************************************************/
+
+#header ul li {
+    background: url('../bg_menu_section_right_blue2.png') no-repeat right bottom;
+}
+
+#header ul li a {
+    background: url('../corner_reverse_bluedark_small_tl.png') no-repeat 0 0;
+    color: #FFFFFF;
+}
+
+#header ul li.selected,
+#header ul li:hover {
+    background: url('../bg_menu_section_right_white1.png') no-repeat right bottom;
+}
+
+#header ul li.selected a,
+#header ul li:hover a {
+	color: #0d3280;
+}
+
+#header .smallNav {
+	height: 95px;
+	background: url("../Images/bg_smallsearch.png") no-repeat right bottom;
+}
+
+#header .searchbox input#inputSearch {
+    background: #036393;
+}
+
+#header .searchbox input.inputSubmit {
+    background: #78BEE2;
+}
