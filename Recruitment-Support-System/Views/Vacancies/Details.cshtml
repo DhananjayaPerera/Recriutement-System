@@ -4,52 +4,52 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js=js cssanimations=cssanimations csstransitions"=csstransitions" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<div>
-    <h4>Vacancy</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+    <title></title>
+  
+    <link rel="shortcut icon" href="~/Content/Images/favicon.ico" />
+    <link href="~/Content/Stylesheets/bootstrap-iso.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->    
+</head>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+<body>
+    <div>
+        <h2>@Html.DisplayFor(model => model.Title)</h2>
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-left:85%;margin-top:-3%;">Apply Now</button>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Description):</span></strong></h5>
+        <ul class="body_bullet_bia">
             @Html.DisplayFor(model => model.Description)
-        </dd>
+        </ul>
+        <div class="space"></div>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Responsibilities)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Responsibilities)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Qualifications)
-        </dt>
-
-        <dd>
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Qualifications):</span></strong></h5>
+        <ul class="body_bullet_bia">
             @Html.DisplayFor(model => model.Qualifications)
-        </dd>
+        </ul>
+        <div class="space"></div>
+    </div>
 
-    </dl>
-</div>
-
-<div class="btn btn-default">
-    @Html.ActionLink("Apply", "Create", "Applicants")
-</div>
-
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.VacancyId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Responsibilities)</span></strong></h5>
+        <ul class="body_bullet_bia">
+            @Html.DisplayFor(model => model.Responsibilities)
+        </ul>
+        <div class="space"></div>
+    </div>
+    </div>
+</body>
+</html>

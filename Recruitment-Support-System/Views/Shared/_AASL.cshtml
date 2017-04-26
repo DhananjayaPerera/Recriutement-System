@@ -1,0 +1,435 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="shortcut icon" href="~/Content/Images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/base.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/siteaccess.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/stylewidgetnew.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/Stylesheets/menu.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/aasl.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/custom.css" />
+
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/curvycorners.js"></script>
+    <script type='text/javascript' src="~/Scripts/jquery.js"></script>
+    <script type='text/javascript' src="~/Scripts/widget.js"></script>
+    <script type='text/javascript' src="~/Scripts/jquery-1.2.6.min.js"></script>
+    <script type='text/javascript' src="~/Scripts/modernizr.custom.28468"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu li').hover(function () {
+                $('ul', this).stop(true, true).slideDown(400);
+            },
+            function () {
+                $('ul', this).stop(true, true).slideUp(400);
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        /***
+            Simple jQuery Slideshow Script
+            Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+        ***/
+
+        function slideSwitch() {
+            var $active = $('#slideshow DIV.active');
+
+            if ($active.length == 0) $active = $('#slideshow DIV:last');
+
+            // use this to pull the divs in the order they appear in the markup
+            var $next = $active.next().length ? $active.next() : $('#slideshow DIV:first');
+
+            // uncomment below to pull the divs randomly
+            // var $sibs  = $active.siblings();
+            // var rndNum = Math.floor(Math.random() * $sibs.length );
+            // var $next  = $( $sibs[ rndNum ] );
+
+            $active.addClass('last-active');
+
+            $next.css({ opacity: 0.0 })
+                .addClass('active')
+                .animate({ opacity: 1.0 }, 1000, function () {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        $(function () {
+            setInterval("slideSwitch()", 4000);
+        });
+    </script>
+
+    <!-- google analytic tool -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-37828960-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!--Slider-->
+    <link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/style2.css" />
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="../slider/css/nojs.css" />
+    </noscript>
+    <script type="text/javascript">var curvyCornersVerbose = false;</script>
+</head>
+
+<body id="home">
+    <div>
+        <!--<div class="imgBg" style="background:url(images/bg-theme-blue.png) fixed no-repeat 0 0;">-->
+        <div style="background-color:#FFFFFF;"></div>
+        <div class="bgMenu"></div>
+        <div class="container">
+
+            <div>
+                <a href="http://www.airport.lk/aasl/index.php" title="Airport &amp; Aviation Services (Srilanka) Ltd" class="h0">
+                    <img src="~/Content/Images/logo_aasl.png" alt="Airport &amp; Aviation Services (Srilanka) Ltd" />
+                    Airport &amp; Aviation Services (Srilanka) Ltd
+                </a>
+            </div>
+
+            <div class="banniere">
+                <!--<a href="../subscribe.html" target="blank">
+                    <img src="images/hia_progress.jpg" width="448" height="60" style="border: 0px;" alt="Airport &amp; Aviation Services (Srilanka) Ltd." title="Airport &amp; Aviation Services (Srilanka) Ltd." />
+                </a>-->
+            </div>
+
+            <div id="header">
+                <div class="tabber">
+                    <a class="bia-bt" href="http://www.airport.lk/aasl/index.php"></a>
+                    <a class="aasl-bt aasl" href="http://www.airport.lk/aasl/index.php"></a>
+                    <!--<a class="hia-bt" href="../../mria/index.php"></a>
+                    <a class="rma-bt" href="../../rma/index.php"></a>-->
+                    <br style="clear: left" />
+                </div>
+
+                <!-- <div class="weather">
+                </div>-->
+
+                <!--<div id="topMenu">
+                    <a href="../../aasl/enrollment/careers.php">Carrers</a>
+                    <a href="../../aasl/business_info/tenders.php">Tenders</a>
+                    <a href="javascript:void(0)" class="underline" onClick="window.open('../CATC/index.html','welcome','width=800,height=600,menubar=yes,status=yes,scrollbars=yes')">Training</a>
+                    <a href="../../aasl/contact_us/contact_details.php" class="last">Contact Us</a>
+                </div>-->
+                <!-- Close topmenu -->
+
+                <div id="localtime">
+                    Tue Apr 25, 2017 12:07<br />&nbsp;(GMT+0530) Colombo, Sri Lanka
+                </div>
+
+                <div class="search">
+                    <form method="get" action="http://www.google.com/search" target="_blank">
+                        <input id="searchPhrase" name="q" title="Enter your text here" size="26" maxlength="255" type="text" value="search..." onfocus="if(this.value=='search...') { this.value='' }" onblur="if(this.value=='') { this.value='search...' }" />
+                        <input src="~/Content/Images/btn_search.png" id="go" alt="Search" type="image" />
+                        <input type="hidden" name="sitesearch" value="www.airport.lk" checked="checked" />
+                    </form>
+                </div>
+                <!--Close Search-->
+
+                <div class="span-9 last smallNav">
+                    <div class="span-7"></div>
+                </div>
+            </div><!-- End header -->
+
+            <!--start Mega menu-->
+            <div class="wrapper_menu menu_light_theme"><!-- BEGIN MENU WRAPPER -->
+                <ul id="menu">
+                    <li><a href="http://www.airport.lk/aasl/company_overview/company_overview.php" class="drop title"><span><strong>Company Overview</strong></span></a><!-- Begin Company Overview Item -->
+                        <div class="dropdown_3columns"><!-- Begin 4 columns container -->
+                            <div class="col_1">
+                                <h3>Ministry of Transport & Civil Aviation</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/ministers_message.php">Hon. Minister’s Message</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/deputy_ministers_message.php">Hon. Deputy Minister’s Message</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/secretary_ministry_message.php">Secretary's Message</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col_1">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/aviation_history.php">Aviation History</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/vision_and_mission.php">Vision & Mission</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/chairmans_welcome.php">Chairman's Welcome</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/board_of_directors.php">Board of Directors</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/consultants.php">Consultants</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/senior_management.php">Senior Management</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/divisions.php">Divisions</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col_1">
+                                <h3>Awards</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/company_overview/awards.php">Special Awards</a></li>
+                                </ul>
+                            </div>
+
+                            <!--<div class="col_1">
+                                <div class="black_box"><p><strong>Chairman's Welcome</strong></p>
+                                    <img src="../site_img/chairman2.gif" class="img_left imgshadow" alt="" />
+                                    <div style="font-size:10px;">I warmly welcome you to the friendliest, safest and most dynamic aviation hub in the region.</div>
+                                    <div><a href="../company_overview/chairmans_welcome.php">more &raquo; </a></div>
+                                </div>
+                            </div>-->
+
+                        </div><!-- End 4 columns container -->
+                    </li>
+                    <!-- End Company Overview Item -->
+
+                    <li><a href="http://www.airport.lk/aasl/business_info/business_info.php" class="drop title"><span><strong>Business Info</strong></span></a><!-- Begin Business Info columns Item -->
+                        <div class="dropdown_3columns"><!-- Begin 4 columns container -->
+                            <div class="col_1">
+                                <h3>Airline Parking</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/business_info/airline_parking.php">Airline Parking Rates</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col_1">
+                                <h3>Air Cargo</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/business_info/cargo_facilities.php">Air Cargo Facilities</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col_1">
+                                <h3>Downloads</h3>
+                                <ul>
+                                    <li><a href="http://www.airport.lk/aasl/business_info/tenders.php">Tenders</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/business_info/annual_reports.php">Annual Reports</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- End 4 columns container -->
+                    </li>
+                    <!-- End Business Info columns Item -->
+
+                    <li><a href="http://www.airport.lk/aasl/enrollment/enrollment.php" class="drop title"><span><strong>Enrollment</strong></span></a><!-- Begin Enrollment columns Item -->
+                        <div class="dropdown_2columns"><!-- Begin 1 columns container -->
+                            <div class="col_1">
+                                <h3>Enrollment</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="underline" onClick="window.open('http://www.airport.lk/aasl/CATC/index.html', 'welcome', 'width=800,height=600,menubar=yes,status=yes,scrollbars=yes')">Training</a></li>
+                                    <li><a href="../Vacancies/Index">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- End 1 columns container -->
+                    </li>
+                    <!-- End Enrollment columns Item -->
+
+                    <li><a href="javascript:void(0)" class="drop title" onClick="window.open('http://www.airport.lk/AIS/web.Home.htm', 'welcome', 'width=890,height=600,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,location=yes')"><span><strong>AIS</strong></span></a><!-- Begin Business Info columns Item -->
+                        <div class="dropdown_2columns"><!-- Begin 1 column container -->
+                            <div class="col_1">
+                                <h3>AIS</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="underline" onClick="window.open('http://www.airport.lk/AIS/web.Home.htm', 'welcome', 'width=890,height=600,menubar=yes,toolbar=yes,status=yes,scrollbars=yes,location=yes')">Aeronotical Information Service</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- End 1 column container -->
+                    </li>
+                    <!-- End AIS's Item -->
+                    <!-- End Enrollment columns Item -->
+
+                    <li><a href="http://www.airport.lk/aasl/news/news.php" class="drop title"><span><strong>News</strong></span></a><!-- Begin Business Info columns Item -->
+                        <div class="dropdown_1column">
+                            <!-- Begin 1 column container -->
+                            <div class="col_1">
+                                <ul class="simple">
+                                    <li><a href="http://www.airport.lk/aasl/news/current_news.php">Latest News</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/news/video_gallery.php">Video Gallery</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- End 1 column container -->
+                    </li>
+                    <!-- End AIS's Item -->
+
+                    <li class="menu_right"><a href="http://www.airport.lk/aasl/contact_us/contact_us.php" class="drop title"><span><strong>Contact Us</strong></span></a>
+                        <div class="dropdown_1column align_right">
+                            <div class="col_1">
+                                <ul class="simple">
+                                    <li><a href="http://www.airport.lk/aasl/contact_us/contact_details.php">Contact Details</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/contact_us/comments.php">Your Comment</a></li>
+                                    <li><a href="http://www.airport.lk/aasl/contact_us/feedback.php">Feedback Form</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Mega Menu --><!-- ContentPage (In-use) -->
+
+            <div id="sub_page_wrapper">
+                <div class="container_12 clearfix">
+                    <div class="grid_12 clearfix">
+                        <div class="generic_content_page clearfix png_bg">
+                            <div class="generic_content_menu_top"></div>
+                            <div class="grid_2 alpha">
+                                <div id="contentPage_pnlInnerContent1" class="generic_content_menu">
+                                    <div>
+                                        <div class="generic_content_menu_title">Enrollment</div>
+                                        <div class="left-nav">
+                                            <ul>
+                                                <li>
+                                                    <a href="http://www.airport.lk/aasl/enrollment/enrollment.php">Enrollment<img class="arrows" src="~/Content/Images/menu_drop.png" alt="↓"></a>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)" class="underline" onClick="window.open('http://www.airport.lk/CATC/index.html', 'welcome', 'width=800,height=600,menubar=yes,status=yes,scrollbars=yes')">Training</a></li>
+                                                        <li><a href="/Vacancies/Index" class="select">Careers</a></li>
+                                                    </ul>
+                                                </li>
+                                                <p>&nbsp;</p>
+                                                <img src="~/Content/Images/nav_Training.jpg" width="197" />
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ContentPageBody -->
+                            <div id="contentPage_ctl01_ContentPageBody_wrapDiv">
+                                <div id="contentPage_ctl01_ContentPageBody_pnlInnerContent1">
+                                        <div class="breadcrumbs">
+                                            <span class="breadcrumb_link"><a class='breadcrumb' href="http://www.airport.lk/">Home</a> &raquo; <a class='breadcrumb' href="http://www.airport.lk/aasl">Aasl</a> &raquo; <a class='breadcrumb' href="http://www.airport.lk/enrollment">Enrollment</a> &raquo; Careers</span>
+                                            <span class="floatRight">
+                                                <img src="~/Content/Images/email.gif"><a class="print" href="javascript:mailpage()">Email this Article</a>
+                                                <img src="~/Content/Images/print.gif"><a class="print" href="javascript:print()">Print this page</a>
+                                            </span>
+                                        </div>
+                                        <h1 class="page_heading">Careers </h1>
+                                    </div>
+                                </div>
+
+                                <div id="contentPage_ctl01_ContentPageBody_pnlInnerContent2">
+                                    <div>
+                                        <div class="body_content">
+                                            <div class="rich_text">
+                                                <p>Our business network relies on both advanced technology and talented people. We at AASL believe in earning our employees' commitment through recognition and reward for ability and innovation.</p>
+                                                <p>We will help you build on your existing personal and technical skills, as well as acquire new ones, to further your career and enhance your individual development. At AASL we strive to be the best and are looking for dynamic, self-motivated individuals to join and grow with us.</p>
+
+                                                @RenderBody()
+
+                                                <!--<span style="font-weight: bold">Sorry..!! There are no vacancies at this moment...</span>
+                                                <p> <a href="http://get.adobe.com/reader/" target="_blank">Adobe Acrobat Reader</a> is required to view PDF files.</p><p>&nbsp;</p>
+
+                                                <div id="subPageTableDutyfree">
+                                                    <table class="BiaTableDutyfree" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <th width="5%"><div align="left">#</div></th>
+                                                        <th width="48%"><div align="left">Position</div></th>
+                                                        <th width="19%">Closing Date</th>
+                                                        <th width="28%"><div align="center">Download</div></th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td bgcolor='#FFFFFF' class='style9'>01</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><h2>කර්මාන්ත ශිල්පී (ටින්කර්/ පෑස්සුම්කරු) 2 පන්තිය</h2></td>
+                                                      <td bgcolor='#FFFFFF' class='style9'>20th   February   2017</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><div align="center"><a href="Paper_Advertisement_Craftsman.pdf" target="_blank" title="Download Paper Advertistment">Paper Advertistment</a> <br />
+                                                        <a href="Specimen_Application_Craftsman.pdf" target="_blank" title="Download Specimen Application">Specimen Application</a></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td bgcolor='#FFFFFF' class='style9'>02</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><h2>කර්මාන්ත ශිල්පී (ඔටෝ සර්විස්මන්) 2 පන්තිය</h2></td>
+                                                      <td bgcolor='#FFFFFF' class='style9'>20th   February   2017</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><div align="center"><a href="Paper_Advertisement_Craftsman.pdf" target="_blank" title="Download Paper Advertistment">Paper Advertistment</a> <br />
+                                                        <a href="Specimen_Application_Craftsman.pdf" target="_blank" title="Download Specimen Application">Specimen Application</a></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td bgcolor='#FFFFFF' class='style9'>03</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><h2>කර්මාන්ත ශිල්පී (වාහන විදුලි කාර්මික) 2 පන්තිය</h2></td>
+                                                      <td bgcolor='#FFFFFF' class='style9'>20th   February   2017</td>
+                                                      <td bgcolor='#FFFFFF' class='style9'><div align="center"><a href="Paper_Advertisement_Craftsman.pdf" target="_blank" title="Download Paper Advertistment">Paper Advertistment</a> <br />
+                                                        <a href="Specimen_Application_Craftsman.pdf" target="_blank" title="Download Specimen Application">Specimen Application</a></div></td>
+                                                    </tr>
+                                                    </table>
+                                                </div>-->
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            <div id="shareIcons">
+            <div class="icons">&nbsp;<br /> &nbsp;<span class="info-share"></span></div>
+
+            <!--<div class="cornerBottomLeftReverseBlue"></div>-->
+            <div class="cornerBottomRightReverseBlue">
+                <ul class="socialcount socialcount-small" data-url="http://www.airport.lk" data-counts="true" data-share-text="Airport &amp; Aviation Services (Sri Lanka) Ltd."></ul>
+            </div>
+        </div><!--End ShareCons-->
+        
+            <div id="footer">
+                <div class="lineyellow"></div>
+                <div id="footerMenu" class="clearfix">
+                    <ul class="level-1">
+                        <li>
+                            <a href="http://www.airport.lk/aasl/contact_us/contact_us.php">Contact us</a>
+                            <!--<ul class="level-2">
+                              <li><a href="#">Airlines at BIA</a></li>
+                              <li><a href="#">Flight Status</a></li>
+                              <li><a href="#">Flight Schedule</a></li>
+                            </ul>-->
+                        </li>
+
+                            <!--<li><a href="#">Contact us</a>
+                            <ul class="level-2">
+                               <li><a href="#">Chairmans Welcome</a></li>
+                               <li><a href="#">Arrival</a></li>
+                               <li><a href="#">Departure</a></li>
+                               <li><a href="#">Security</a></li>
+                               <li><a href="#">Shopping &amp; Dining</a></li>
+                               <li><a href="#">Lounges</a></li>
+                             </ul>
+                              </li>-->
+
+                            <!--<li><a href="#">Sitemap</a>
+                            <ul class="level-2">
+                               <li><a href="#">To &amp; From Airport</a></li>
+                               <li><a href="#">Parking</a></li>
+                               <li><a href="#">Airport Map</a></li>
+                             </ul>-->
+                    </ul>
+                </div>
+            
+                <div class="infoslegales clearfix">
+                    <ul>
+                        <li>© 2009 - 2015 Airport & Aviation Services (Sri Lanka) Limited, All rights reserved.</li>
+                        <li><a href="http://home.airport.lk">Member Services</a></li>
+                        <li><a href="http://www.airport.lk/members/members.html">Members Login:</a></li>
+                    </ul>
+                </div>
+
+                <!--<a href="Passagers/Contact.html" title="Contactez nous au 0820 423 333 (0.12€ / min)"><img class="contact" src="extension/anca/design/anca_user/images/skin/contact.png" alt="Contactez nous au 0820 423 333 (0.12€ / min)" /></a>-->
+                <!--<img class="social" src="../site_img/social_media.png" />-->
+                <img class="logo" src="~/Content/Images/logo.png" width="138" height="56" />
+            </div>
+            <!-- FIN Footer -->
+
+        </div><!-- End container -->
+    </div><!--End Bg-image-->
+
+</body>
+</html>
