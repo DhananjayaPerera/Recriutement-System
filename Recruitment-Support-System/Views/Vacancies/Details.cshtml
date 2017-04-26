@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Details";
 }
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class=" js=js cssanimations=cssanimations csstransitions"=csstransitions" >
 <head>
@@ -17,15 +16,25 @@
     <link rel="shortcut icon" href="~/Content/Images/favicon.ico" />
     <link href="~/Content/Stylesheets/bootstrap-iso.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
         
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->    
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body>
     <div>
         <h2>@Html.DisplayFor(model => model.Title)</h2>
-        <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-left:85%;margin-top:-3%;">Apply Now</button>
+        <input id="btntest" type="button" style="margin-left:85%;margin-top:-3%;" value="Apply Now" class="btn btn-default" data-dismiss="modal" style="margin-left:85%;margin-top:-3%;" onclick="location.href='@Url.Action("Create", "Applicants")'"/>
     </div>
+
+    <script>
+
+
+    </script>
+
 
     <div>
         <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Description):</span></strong></h5>

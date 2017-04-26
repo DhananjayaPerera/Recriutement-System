@@ -218,6 +218,7 @@
     <Content Include="Content\Images\print.gif" />
     <Content Include="Content\Images\sl_logo.jpg" />
     <Content Include="Content\Images\sub_top_line.png" />
+    <Content Include="Content\Stylesheets\2.css" />
     <Content Include="Content\Stylesheets\bootstrap-iso.css" />
     <Content Include="Content\site.css" />
     <Content Include="Content\Stylesheets\aasl.css" />
@@ -277,6 +278,7 @@
       <LastGenOutput>VacancyModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Scripts\3.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\VacancyModel.edmx">
