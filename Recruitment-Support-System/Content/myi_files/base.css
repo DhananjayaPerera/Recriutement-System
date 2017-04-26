@@ -6,7 +6,7 @@ table, td, th{
 	border-collapse: collapse;
 }
 .bgMenu {
-    background-image:url(Header1.jpg);
+	background-image:url(../site_img/gradient1.png);
 	background-repeat: repeat-x;
 	height: 65px;
 	width: 100%;

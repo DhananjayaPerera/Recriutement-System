@@ -2,7 +2,7 @@
 	list-style:none;
 	width:980px;
 	height:68px;
-	background-image:url(menu.jpg);
+	background:url(../site_img/sky_blue_tab.png) no-repeat;
 	border-radius:4px;
 	box-shadow: 0px 2px 5px #DDDDDD;
 	background-color: -webkit-gradient;
@@ -129,7 +129,7 @@ body#classes	#nav li#classeslink  a
 	border-top:none;
 	box-shadow: 0px 12px 20px #EEEEEE;
 	/* Gradient background */
-	background-image:url(drop.jpg);
+	background-image:url("../site_img/alpha.png");
 	background-repeat: repeat;
 	/*background:#F4F4F4;
 	background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
