@@ -190,14 +190,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\Stylesheets\bootstrap-theme.css" />
+    <Content Include="Content\Stylesheets\bootstrap-theme.css.map" />
+    <Content Include="Content\Stylesheets\bootstrap-theme.min.css" />
+    <Content Include="Content\Stylesheets\bootstrap-theme.min.css.map" />
+    <Content Include="Content\Stylesheets\bootstrap.css" />
+    <Content Include="Content\Stylesheets\bootstrap.css.map" />
+    <Content Include="Content\Stylesheets\bootstrap.min.css" />
+    <Content Include="Content\Stylesheets\bootstrap.min.css.map" />
     <Content Include="Content\Images\aasl3.png" />
     <Content Include="Content\Images\alpha.png" />
     <Content Include="Content\Images\bg_ico_share_right.png" />
@@ -207,7 +207,7 @@
     <Content Include="Content\Images\btn_search.png" />
     <Content Include="Content\Images\drop.png" />
     <Content Include="Content\Images\email.gif" />
-    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="favicon.ico" />
     <Content Include="Content\Images\gradient1.png" />
     <Content Include="Content\Images\HoverBlue.png" />
     <Content Include="Content\Images\logo.png" />
@@ -219,7 +219,7 @@
     <Content Include="Content\Images\sl_logo.jpg" />
     <Content Include="Content\Images\sub_top_line.png" />
     <Content Include="Content\Stylesheets\bootstrap-iso.css" />
-    <Content Include="Content\site.css" />
+    <Content Include="Content\Stylesheets\site.css" />
     <Content Include="Content\Stylesheets\aasl.css" />
     <Content Include="Content\Stylesheets\base.css" />
     <Content Include="Content\Stylesheets\custom.css" />
@@ -229,7 +229,6 @@
     <Content Include="Content\Stylesheets\style2.css" />
     <Content Include="Content\Stylesheets\stylewidgetnew.css" />
     <Content Include="Content\Stylesheets\tabs.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
