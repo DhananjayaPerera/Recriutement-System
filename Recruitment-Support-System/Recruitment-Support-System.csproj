@@ -207,6 +207,7 @@
     <Content Include="Content\Images\btn_search.png" />
     <Content Include="Content\Images\drop.png" />
     <Content Include="Content\Images\email.gif" />
+    <Content Include="Content\Stylesheets\dashboard.css" />
     <Content Include="favicon.ico" />
     <Content Include="Content\Images\gradient1.png" />
     <Content Include="Content\Images\HoverBlue.png" />
@@ -218,6 +219,7 @@
     <Content Include="Content\Images\print.gif" />
     <Content Include="Content\Images\sl_logo.jpg" />
     <Content Include="Content\Images\sub_top_line.png" />
+    <Content Include="Content\Stylesheets\2.css" />
     <Content Include="Content\Stylesheets\bootstrap-iso.css" />
     <Content Include="Content\Stylesheets\site.css" />
     <Content Include="Content\Stylesheets\aasl.css" />
@@ -276,6 +278,7 @@
       <LastGenOutput>VacancyModel.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="Scripts\3.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\VacancyModel.edmx">
@@ -326,7 +329,7 @@
     <Content Include="Scripts\widget.js" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index-Home.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\logo.png" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -356,6 +359,7 @@
     <Content Include="Views\EduQualifications\Edit.cshtml" />
     <Content Include="Views\EduQualifications\Index.cshtml" />
     <Content Include="Views\Shared\_AASL.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Users.cshtml" />
