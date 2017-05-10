@@ -23,9 +23,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Class)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ApplicantId)
-        </th>
         <th></th>
     </tr>
 
@@ -44,12 +41,9 @@
             @Html.DisplayFor(modelItem => item.Class)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ApplicantId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EQId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EQId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EQId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.EduQualificationId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EduQualificationId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EduQualificationId })
         </td>
     </tr>
 }

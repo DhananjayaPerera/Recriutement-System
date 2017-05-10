@@ -12,12 +12,12 @@ namespace Recruitment_Support_System.Controllers
 {
     public class EduQualificationController : Controller
     {
-        private EduQualificationEntities db = new EduQualificationEntities();
+        private EduQualificationDbContext db = new EduQualificationDbContext();
 
         // GET: EduQualification
         public ActionResult Index()
         {
-            return View(db.EduQualification.ToList());
+            return View(db.EduQualifications.ToList());
         }
 
         // GET: EduQualification/Details/5
@@ -27,7 +27,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EduQualification eduQualification = db.EduQualification.Find(id);
+            EduQualification eduQualification = db.EduQualifications.Find(id);
             if (eduQualification == null)
             {
                 return HttpNotFound();
@@ -46,11 +46,11 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EQId,Type,Title,Institute,Class,ApplicantId")] EduQualification eduQualification)
+        public ActionResult Create([Bind(Include = "EduQualificationId,Type,Title,Institute,Class")] EduQualification eduQualification)
         {
             if (ModelState.IsValid)
             {
-                db.EduQualification.Add(eduQualification);
+                db.EduQualifications.Add(eduQualification);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EduQualification eduQualification = db.EduQualification.Find(id);
+            EduQualification eduQualification = db.EduQualifications.Find(id);
             if (eduQualification == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EQId,Type,Title,Institute,Class,ApplicantId")] EduQualification eduQualification)
+        public ActionResult Edit([Bind(Include = "EduQualificationId,Type,Title,Institute,Class")] EduQualification eduQualification)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            EduQualification eduQualification = db.EduQualification.Find(id);
+            EduQualification eduQualification = db.EduQualifications.Find(id);
             if (eduQualification == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace Recruitment_Support_System.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            EduQualification eduQualification = db.EduQualification.Find(id);
-            db.EduQualification.Remove(eduQualification);
+            EduQualification eduQualification = db.EduQualifications.Find(id);
+            db.EduQualifications.Remove(eduQualification);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

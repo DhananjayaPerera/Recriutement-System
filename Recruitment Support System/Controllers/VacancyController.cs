@@ -12,12 +12,12 @@ namespace Recruitment_Support_System.Controllers
 {
     public class VacancyController : Controller
     {
-        private VacancyEntities db = new VacancyEntities();
+        private VacancyDbContext db = new VacancyDbContext();
 
         // GET: Vacancy
         public ActionResult Index()
         {
-            return View(db.Vacancy.ToList());
+            return View(db.Vacancies.ToList());
         }
 
         // GET: Vacancy/Details/5
@@ -27,7 +27,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vacancy vacancy = db.Vacancy.Find(id);
+            Vacancy vacancy = db.Vacancies.Find(id);
             if (vacancy == null)
             {
                 return HttpNotFound();
@@ -35,7 +35,6 @@ namespace Recruitment_Support_System.Controllers
             return View(vacancy);
         }
 
-        [Authorize]
         // GET: Vacancy/Create
         public ActionResult Create()
         {
@@ -47,11 +46,11 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "VacancyId,Title,Description,Responsibilities,Qualifications")] Vacancy vacancy)
+        public ActionResult Create([Bind(Include = "VacancyID,Title,Description,Responsibilities,Qualifications")] Vacancy vacancy)
         {
             if (ModelState.IsValid)
             {
-                db.Vacancy.Add(vacancy);
+                db.Vacancies.Add(vacancy);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -66,7 +65,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vacancy vacancy = db.Vacancy.Find(id);
+            Vacancy vacancy = db.Vacancies.Find(id);
             if (vacancy == null)
             {
                 return HttpNotFound();
@@ -79,7 +78,7 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "VacancyId,Title,Description,Responsibilities,Qualifications")] Vacancy vacancy)
+        public ActionResult Edit([Bind(Include = "VacancyID,Title,Description,Responsibilities,Qualifications")] Vacancy vacancy)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +96,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vacancy vacancy = db.Vacancy.Find(id);
+            Vacancy vacancy = db.Vacancies.Find(id);
             if (vacancy == null)
             {
                 return HttpNotFound();
@@ -110,8 +109,8 @@ namespace Recruitment_Support_System.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Vacancy vacancy = db.Vacancy.Find(id);
-            db.Vacancy.Remove(vacancy);
+            Vacancy vacancy = db.Vacancies.Find(id);
+            db.Vacancies.Remove(vacancy);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

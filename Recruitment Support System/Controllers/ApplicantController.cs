@@ -12,12 +12,12 @@ namespace Recruitment_Support_System.Controllers
 {
     public class ApplicantController : Controller
     {
-        private ApplicantEntities db = new ApplicantEntities();
+        private ApplicantDbContext db = new ApplicantDbContext();
 
         // GET: Applicant
         public ActionResult Index()
         {
-            return View(db.Applicant.ToList());
+            return View(db.Applicants.ToList());
         }
 
         // GET: Applicant/Details/5
@@ -27,7 +27,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Applicant applicant = db.Applicant.Find(id);
+            Applicant applicant = db.Applicants.Find(id);
             if (applicant == null)
             {
                 return HttpNotFound();
@@ -46,11 +46,11 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ApplicantId,Title,FullName,Address,mobile,email,dob,civil_status")] Applicant applicant)
+        public ActionResult Create([Bind(Include = "ApplicantId,Title,FullName,Address,Mobile,Email,DOB,Civil_Status")] Applicant applicant)
         {
             if (ModelState.IsValid)
             {
-                db.Applicant.Add(applicant);
+                db.Applicants.Add(applicant);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Applicant applicant = db.Applicant.Find(id);
+            Applicant applicant = db.Applicants.Find(id);
             if (applicant == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace Recruitment_Support_System.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ApplicantId,Title,FullName,Address,mobile,email,dob,civil_status")] Applicant applicant)
+        public ActionResult Edit([Bind(Include = "ApplicantId,Title,FullName,Address,Mobile,Email,DOB,Civil_Status")] Applicant applicant)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace Recruitment_Support_System.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Applicant applicant = db.Applicant.Find(id);
+            Applicant applicant = db.Applicants.Find(id);
             if (applicant == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace Recruitment_Support_System.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Applicant applicant = db.Applicant.Find(id);
-            db.Applicant.Remove(applicant);
+            Applicant applicant = db.Applicants.Find(id);
+            db.Applicants.Remove(applicant);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
