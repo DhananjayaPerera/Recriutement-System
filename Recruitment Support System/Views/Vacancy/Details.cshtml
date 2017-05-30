@@ -19,21 +19,24 @@
 </head>
 
 <body>
+
     <div>
         <h2>@Html.DisplayFor(model => model.Title)</h2>
         <input id="btntest" type="button" style="margin-left:85%;margin-top:-3%;" value="Apply Now" class="btn btn-default" data-dismiss="modal" style="margin-left:85%;margin-top:-3%;" onclick="location.href='@Url.Action("Create", "Applicant")'"/>
     </div>
 
-    <script>
-
-
-    </script>
-
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Scope):</span></strong></h5>
+        <ul class="body_bullet_bia">
+            @Html.DisplayFor(model => model.Scope)
+        </ul>
+        <div class="space"></div>
+    </div>
 
     <div>
-        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Description):</span></strong></h5>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Responsibilities):</span></strong></h5>
         <ul class="body_bullet_bia">
-            @Html.DisplayFor(model => model.Description)
+            @Html.DisplayFor(model => model.Responsibilities)
         </ul>
         <div class="space"></div>
     </div>
@@ -47,9 +50,25 @@
     </div>
 
     <div>
-        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Responsibilities)</span></strong></h5>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Age):</span></strong></h5>
         <ul class="body_bullet_bia">
-            @Html.DisplayFor(model => model.Responsibilities)
+            @Html.DisplayFor(model => model.Age)
+        </ul>
+        <div class="space"></div>
+    </div>
+
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Salary)</span></strong></h5>
+        <ul class="body_bullet_bia">
+            @Html.DisplayFor(model => model.Salary)
+        </ul>
+        <div class="space"></div>
+    </div>
+
+    <div>
+        <h5><strong><span class="underline">@Html.DisplayNameFor(model => model.Selection):</span></strong></h5>
+        <ul class="body_bullet_bia">
+            @Html.DisplayFor(model => model.Selection)
         </ul>
         <div class="space"></div>
     </div>

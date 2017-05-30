@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNet.Identity;
+
+@if (Request.IsAuthenticated)
+{
+<!--Sidebar-->
+<link rel="stylesheet" type="text/css" href="~/Content/Stylesheets/custom.css" />
+<div id = "sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a><h3><b>Recruitment Support System</b></h3></a>
+        </li>
+        <li>
+            <a href="/Applicant/Index">Dashboard</a>
+        </li>
+        <li>
+            <a href="#">Job Titles</a>
+        </li>
+        <li>
+            <a href="#">Publish Vacancies</a>
+        </li>
+        <li>
+            <a href="#">News</a>
+        </li>
+        <li>
+            <a href="#">Community</a>
+        </li>
+        <li>
+            <a href="#">Admin Panel</a>
+        </li>
+    </ul>
+</div>
+<!-- /#sidebar-wrapper -->
+}

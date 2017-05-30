@@ -6,7 +6,6 @@ using System.Web.Mvc;
 
 namespace Recruitment_Support_System.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()

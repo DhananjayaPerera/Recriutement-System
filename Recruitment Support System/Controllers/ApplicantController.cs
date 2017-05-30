@@ -14,6 +14,7 @@ namespace Recruitment_Support_System.Controllers
     {
         private ApplicantDbContext db = new ApplicantDbContext();
 
+        [Authorize]
         // GET: Applicant
         public ActionResult Index()
         {

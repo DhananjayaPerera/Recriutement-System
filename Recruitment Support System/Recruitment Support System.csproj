@@ -304,7 +304,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
@@ -324,7 +323,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Vacancy\Create.cshtml" />
     <Content Include="Views\Vacancy\Delete.cshtml" />
     <Content Include="Views\Vacancy\Details.cshtml" />
@@ -332,7 +330,6 @@
     <Content Include="Views\Vacancy\Index.cshtml" />
     <Content Include="Views\Shared\_AASL.cshtml" />
     <Content Include="Views\Applicant\Create.cshtml" />
-    <Content Include="Views\Applicant\Delete.cshtml" />
     <Content Include="Views\Applicant\Details.cshtml" />
     <Content Include="Views\Applicant\Edit.cshtml" />
     <Content Include="Views\Applicant\Index.cshtml" />
@@ -341,6 +338,7 @@
     <Content Include="Views\EduQualification\Details.cshtml" />
     <Content Include="Views\EduQualification\Edit.cshtml" />
     <Content Include="Views\EduQualification\Index.cshtml" />
+    <Content Include="Views\Shared\_SidebarPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
